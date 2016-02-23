@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for homework/config/passportConfig.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">homework/config/</a> passportConfig.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">15.94% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>11/69</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/22</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">5.88% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/17</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">16.18% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>11/68</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// load all the things we need
+var FacebookStrategy = require('passport-facebook').Strategy;
+var LocalStrategy = require('passport-local').Strategy;
+&nbsp;
+var User = require('../models/userModel.js');
+&nbsp;
+// load the auth variables
+var auth = require('./auth');
+&nbsp;
+var createUserIfNotExists = <span class="fstat-no" title="function not covered" >function(facebookId, name) {</span>
+<span class="cstat-no" title="statement not covered" >	console.log("createUserIfNotExists: " + name)</span>
+<span class="cstat-no" title="statement not covered" >	User.findOne({"facebookId": facebookId}, <span class="fstat-no" title="function not covered" >function(err, user) {</span></span>
+<span class="cstat-no" title="statement not covered" >		if (user == null) {</span>
+<span class="cstat-no" title="statement not covered" >			console.log('new user')</span>
+<span class="cstat-no" title="statement not covered" >			var newUser = User({"name": name, "facebookId": facebookId})</span>
+<span class="cstat-no" title="statement not covered" >			newUser.save(<span class="fstat-no" title="function not covered" >function (err, newUser) {</span></span>
+<span class="cstat-no" title="statement not covered" >				if (err) <span class="cstat-no" title="statement not covered" >return console.error(err)</span></span>
+			});
+<span class="cstat-no" title="statement not covered" >			console.log(newUser)</span>
+		} else {
+<span class="cstat-no" title="statement not covered" >			console.log('existing user')</span>
+<span class="cstat-no" title="statement not covered" >			console.log(user)</span>
+		}
+	});
+&nbsp;
+}
+&nbsp;
+module.exports = function(passport) {
+&nbsp;
+    // used to serialize the user for the session
+    passport.serializeUser(<span class="fstat-no" title="function not covered" >function(user, done) {</span>
+<span class="cstat-no" title="statement not covered" >        done(null, user.id);</span>
+    });
+&nbsp;
+    // used to deserialize the user
+    passport.deserializeUser(<span class="fstat-no" title="function not covered" >function(id, done) {</span>
+<span class="cstat-no" title="statement not covered" >        User.findById(id, <span class="fstat-no" title="function not covered" >function(err, user) {</span></span>
+<span class="cstat-no" title="statement not covered" >            done(err, user);</span>
+        });
+    });
+&nbsp;
+    passport.use(new FacebookStrategy({
+	    clientID: auth.FACEBOOK_APP_ID,
+	    clientSecret: auth.FACEBOOK_APP_SECRET,
+	    callbackURL: auth.FACEBOOK_CALLBACK_URL,
+	    profileFields: ["emails", "displayName"]
+		},
+<span class="fstat-no" title="function not covered" >    function(token, refreshToken, profile, done) {</span>
+&nbsp;
+        // asynchronous
+<span class="cstat-no" title="statement not covered" >        process.nextTick(<span class="fstat-no" title="function not covered" >function() {</span></span>
+&nbsp;
+            // find the user in the database based on their facebook id
+<span class="cstat-no" title="statement not covered" >            User.findOne({ 'facebook.id' : profile.id }, <span class="fstat-no" title="function not covered" >function(err, user) {</span></span>
+&nbsp;
+                // if there is an error, stop everything and return that
+                // ie an error connecting to the database
+<span class="cstat-no" title="statement not covered" >                if (err)</span>
+<span class="cstat-no" title="statement not covered" >                    return done(err);</span>
+&nbsp;
+                // if the user is found, then log them in
+<span class="cstat-no" title="statement not covered" >                if (user) {</span>
+<span class="cstat-no" title="statement not covered" >                    return done(null, user); </span>// user found, return that user
+                } else {
+                    // if there is no user found with that facebook id, create them
+<span class="cstat-no" title="statement not covered" >                    var newUser            = new User();</span>
+&nbsp;
+                    // set all of the facebook information in our user model
+<span class="cstat-no" title="statement not covered" >                    newUser.facebook.id    = profile.id; </span>// set the users facebook id                   
+<span class="cstat-no" title="statement not covered" >                    newUser.facebook.token = token; </span>// we will save the token that facebook provides to the user                    
+<span class="cstat-no" title="statement not covered" >                    newUser.facebook.name  = profile.displayName; </span>// look at the passport user profile to see how names are returned
+<span class="cstat-no" title="statement not covered" >                    newUser.facebook.email = profile.emails[0].value; </span>// facebook can return multiple emails so we'll take the first
+<span class="cstat-no" title="statement not covered" >                    newUser.displayName = profile.displayName</span>
+                    // save our user to the database
+<span class="cstat-no" title="statement not covered" >                    newUser.save(<span class="fstat-no" title="function not covered" >function(err) {</span></span>
+<span class="cstat-no" title="statement not covered" >                        if (err)</span>
+<span class="cstat-no" title="statement not covered" >                            throw err;</span>
+&nbsp;
+                        // if successful, return the new user
+<span class="cstat-no" title="statement not covered" >                        return done(null, newUser);</span>
+                    });
+                }
+&nbsp;
+            });
+        });
+&nbsp;
+    }));
+&nbsp;
+    passport.use('local-signup', new LocalStrategy({
+        // by default, local strategy uses username and password, we will override with email
+        // usernameField : 'username',
+        // passwordField : 'password',
+        passReqToCallback : true // allows us to pass back the entire request to the callback
+    },
+<span class="fstat-no" title="function not covered" >    function(req, username, password, done) {</span>
+<span class="cstat-no" title="statement not covered" >    	console.log("local-signup")</span>
+<span class="cstat-no" title="statement not covered" >    	console.log("username")</span>
+<span class="cstat-no" title="statement not covered" >    	console.log("password")</span>
+        // asynchronous
+        // User.findOne wont fire unless data is sent back
+<span class="cstat-no" title="statement not covered" >        process.nextTick(<span class="fstat-no" title="function not covered" >function() {</span></span>
+&nbsp;
+        // find a user whose email is the same as the forms email
+        // we are checking to see if the user trying to login already exists
+<span class="cstat-no" title="statement not covered" >        User.findOne({ 'local.username' :  username }, <span class="fstat-no" title="function not covered" >function(err, user) {</span></span>
+            // if there are any errors, return the error
+<span class="cstat-no" title="statement not covered" >            if (err)</span>
+<span class="cstat-no" title="statement not covered" >                return done(err);</span>
+&nbsp;
+            // check to see if theres already a user with that email
+<span class="cstat-no" title="statement not covered" >            console.log(user)</span>
+<span class="cstat-no" title="statement not covered" >            if (user) {</span>
+<span class="cstat-no" title="statement not covered" >            	console.log("username already in use")</span>
+<span class="cstat-no" title="statement not covered" >                return done(null, false, req.flash('error', 'That username is already taken.'));</span>
+            } else {
+<span class="cstat-no" title="statement not covered" >            	console.log("username available")</span>
+                // if there is no user with that email
+                // create the user
+<span class="cstat-no" title="statement not covered" >                var newUser            = new User();</span>
+&nbsp;
+                // set the user's local credentials
+<span class="cstat-no" title="statement not covered" >                newUser.local.username    = username;</span>
+<span class="cstat-no" title="statement not covered" >                newUser.local.password = newUser.generateHash(password);</span>
+<span class="cstat-no" title="statement not covered" >                newUser.displayName = username</span>
+                // save the user
+<span class="cstat-no" title="statement not covered" >                newUser.save(<span class="fstat-no" title="function not covered" >function(err) {</span></span>
+<span class="cstat-no" title="statement not covered" >                    if (err)</span>
+<span class="cstat-no" title="statement not covered" >                        throw err;</span>
+<span class="cstat-no" title="statement not covered" >                    return done(null, newUser);</span>
+                });
+            }
+&nbsp;
+        });    
+&nbsp;
+        });
+&nbsp;
+    }));
+&nbsp;
+    passport.use('local-login', new LocalStrategy({
+        // by default, local strategy uses username and password, we will override with email
+        usernameField : 'username',
+        passwordField : 'password',
+        passReqToCallback : true // allows us to pass back the entire request to the callback
+    },
+<span class="fstat-no" title="function not covered" >    function(req, username, password, done) {</span> // callback with email and password from our form
+&nbsp;
+        // find a user whose email is the same as the forms email
+        // we are checking to see if the user trying to login already exists
+<span class="cstat-no" title="statement not covered" >        User.findOne({ 'local.username' :  username }, <span class="fstat-no" title="function not covered" >function(err, user) {</span></span>
+            // if there are any errors, return the error before anything else
+<span class="cstat-no" title="statement not covered" >            if (err)</span>
+<span class="cstat-no" title="statement not covered" >                return done(err);</span>
+&nbsp;
+            // if no user is found, return the message
+<span class="cstat-no" title="statement not covered" >            if (!user)</span>
+<span class="cstat-no" title="statement not covered" >                return done(null, false, req.flash('error', 'No user found.')); </span>// req.flash is the way to set flashdata using connect-flash
+&nbsp;
+            // if the user is found but the password is wrong
+<span class="cstat-no" title="statement not covered" >            if (!user.validPassword(password))</span>
+<span class="cstat-no" title="statement not covered" >                return done(null, false, req.flash('error', 'Oops! Wrong password.')); </span>// create the loginMessage and save it to session as flashdata
+&nbsp;
+            // all is well, return successful user
+<span class="cstat-no" title="statement not covered" >            return done(null, user);</span>
+        });
+&nbsp;
+    }));
+&nbsp;
+};</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Feb 19 2016 01:23:42 GMT-0500 (EST)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>
