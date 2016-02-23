@@ -16,7 +16,7 @@ require('./config/passportConfig')(passport);
 
 var app = express();
 
-mongoose.connect('mongodb://localhost/twotter');
+mongoose.connect('process.env.MONGOLAB_URI');
 
 app.use(logger('dev'));
 app.use(bodyParser.json());

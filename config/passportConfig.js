@@ -40,9 +40,9 @@ module.exports = function(passport) {
     });
 
     passport.use(new FacebookStrategy({
-	    clientID: auth.FACEBOOK_APP_ID,
-	    clientSecret: auth.FACEBOOK_APP_SECRET,
-	    callbackURL: auth.FACEBOOK_CALLBACK_URL,
+	    clientID: process.env.MONGOLAB_URIFACEBOOK_APP_ID,
+	    clientSecret: process.env.MONGOLAB_URIFACEBOOK_APP_SECRET,
+	    callbackURL: process.env.MONGOLAB_URIFACEBOOK_CALLBACK_URL,
 	    profileFields: ["emails", "displayName"]
 		},
     function(token, refreshToken, profile, done) {
